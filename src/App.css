@@ -62,6 +62,7 @@ body {
   border: 2px solid rgb(59, 2, 112);
   border-radius: 6px;
   object-fit: contain;
+  box-shadow: #079e82 2px -2px 12px;
 }
 
 .c-counter {
@@ -70,7 +71,6 @@ body {
   margin-left: 24%;
   margin-top: 0px;
   text-align: center;
-  transition: all 0.5s;
 }
 
 .c-title {
