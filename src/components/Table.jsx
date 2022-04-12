@@ -6,7 +6,6 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
   const [clicked, setClicked] = useState(false);
 
   const checkShot = (index, winCoor) => {
-    setCounter(counter + 1);
     if (index === winCoor && clicked === false) {
       setCell(images.win);
       setTimeout(() => {
