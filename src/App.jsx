@@ -18,7 +18,7 @@ function App() {
   const [counter, setCounter] = useState(0);
   return (
     <div className="App">
-      <h1 className="c-title">Find the Framework!</h1>
+      <h1 className="c-title">Find The Framework!</h1>
       <div className="c-tableboard">
         {tableBoard.map((index) => (
           <div key={index}>
