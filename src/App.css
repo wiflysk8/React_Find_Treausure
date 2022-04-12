@@ -1,7 +1,13 @@
 .App {
+  display: flex;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
+  color: rgb(200, 199, 196);
 }
-
+body {
+  background-color: #0f191f;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.c-tableboard {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 110px;
+  text-shadow: #079e82 2px 2px 0px;
+}
+
+.c-tableboard img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(59, 2, 112);
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.c-counter {
+  font-weight: bold;
+  font-size: 4rem;
+  position: absolute;
+  bottom: 8%;
+  left: 41%;
+}
+
+.c-title {
+  font-weight: bold;
+  font-size: 4rem;
+  position: absolute;
+  left: 30.5%;
+  bottom: 85%;
+  text-shadow: #079e82 2px 2px 0px;
 }
