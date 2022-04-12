@@ -51,7 +51,7 @@ body {
   width: 40%;
   gap: 8px;
   height: auto;
-  margin-left: 10%;
+  margin-left: 8%;
   text-shadow: #079e82 2px 2px 0px;
 }
 
@@ -70,6 +70,7 @@ body {
   margin-left: 24%;
   margin-top: 0px;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .c-title {
