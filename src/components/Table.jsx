@@ -7,6 +7,7 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
 
   const checkShot = (index, winCoor) => {
     if (index === winCoor && clicked === false) {
+      setCounter(counter + 1);
       setCell(images.win);
       setTimeout(() => {
         alert("You Win in " + (counter + 1) + " shots!");
