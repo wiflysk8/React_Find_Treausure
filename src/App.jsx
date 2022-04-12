@@ -25,7 +25,7 @@ function App() {
             <Table images={images} index={index} winCoor={winCoor} setCounter={setCounter} counter={counter} />
           </div>
         ))}
-        <p className="c-counter">Tries: {counter}</p>
+        <p className="c-counter">Shots: {counter}</p>
       </div>
     </div>
   );
