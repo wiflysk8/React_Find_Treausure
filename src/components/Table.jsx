@@ -13,7 +13,7 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
         alert("You Win in " + (counter + 1) + " shots!");
         setClicked(true);
         window.location.reload();
-      }, 300);
+      }, 150);
     } else if (clicked === false) {
       setCell(images.miss);
       setCounter(counter + 1);
