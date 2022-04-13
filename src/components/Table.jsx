@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
 const Table = ({ images, index, winCoor, counter, setCounter }) => {
-  console.log(winCoor);
   const [cell, setCell] = useState();
   const [clicked, setClicked] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
