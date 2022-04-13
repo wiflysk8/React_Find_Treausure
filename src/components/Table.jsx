@@ -19,7 +19,7 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
         alert("You Win in " + (counter + 1) + " shots!");
         setClicked(true);
         window.location.reload();
-      }, 150);
+      }, 250);
     } else if (clicked === false) {
       setCell(images.miss);
       setCounter(counter + 1);
@@ -30,29 +30,17 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
   return (
     <div className="card">
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <div>
-          <img
-            onClick={() => {
-              checkShot(index, winCoor);
-              handleClick();
-            }}
-            src={images.default}
-            alt="cell"
-          />
-        </div>
+        <img
+          onClick={() => {
+            checkShot(index, winCoor);
+            handleClick();
+          }}
+          src={images.default}
+          alt="cell"
+        />
 
-        <div>
-          <img
-            onClick={() => {
-              checkShot(index, winCoor);
-              handleClick();
-            }}
-            src={cell}
-            alt="cell"
-          />
-        </div>
+        <img onClick={() => checkShot(index, winCoor)} src={cell} alt="cell" />
       </ReactCardFlip>
-      {/* <img onClick={() => checkShot(index, winCoor)} src={cell} alt="cell" /> */}
     </div>
   );
 };
