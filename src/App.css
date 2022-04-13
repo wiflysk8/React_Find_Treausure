@@ -36,15 +36,6 @@ body {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .c-tableboard {
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +60,7 @@ body {
   font-weight: bold;
   font-size: 4rem;
   margin-left: 24%;
-  margin-top: 0px;
+  margin-top: 36px;
   text-align: center;
 }
 

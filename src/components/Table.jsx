@@ -1,9 +1,15 @@
 import React, { useState } from "react";
+import ReactCardFlip from "react-card-flip";
 
 const Table = ({ images, index, winCoor, counter, setCounter }) => {
   console.log(winCoor);
-  const [cell, setCell] = useState(images.default);
+  const [cell, setCell] = useState();
   const [clicked, setClicked] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
 
   const checkShot = (index, winCoor) => {
     if (index === winCoor && clicked === false) {
@@ -22,9 +28,32 @@ const Table = ({ images, index, winCoor, counter, setCounter }) => {
   };
 
   return (
-    <>
-      <img onClick={() => checkShot(index, winCoor)} src={cell} alt="cell" />
-    </>
+    <div className="card">
+      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <div>
+          <img
+            onClick={() => {
+              checkShot(index, winCoor);
+              handleClick();
+            }}
+            src={images.default}
+            alt="cell"
+          />
+        </div>
+
+        <div>
+          <img
+            onClick={() => {
+              checkShot(index, winCoor);
+              handleClick();
+            }}
+            src={cell}
+            alt="cell"
+          />
+        </div>
+      </ReactCardFlip>
+      {/* <img onClick={() => checkShot(index, winCoor)} src={cell} alt="cell" /> */}
+    </div>
   );
 };
 
